@@ -7,6 +7,6 @@ RUN apk add --no-cache python3-dev build-base linux-headers pcre-dev \
 
 WORKDIR /srv/nagiosapi
 
-ADD nagiosapi .
+ADD nagiosapi /srv/nagiosapi/nagiosapi
 
 CMD ["uwsgi", "--http", ":9090", "--uid", "10000", "--gid", "10000", "--wsgi", "nagiosapi:app", "--master"]
