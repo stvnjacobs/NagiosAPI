@@ -37,3 +37,7 @@ $ docker run -d \
     -v /usr/local/nagios/var/status.dat:/usr/local/nagios/var/status.dat
     rmcintosh/nagiosapi
 ```
+
+### Notes
+
+Currently, all endpoints are GET/read-only.
