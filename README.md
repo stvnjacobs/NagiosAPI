@@ -23,7 +23,7 @@ From there you can choose to run it as a standard python application, or with Do
 $ pip install -r requirements.txt
 $ cd nagiosapi/
 $ export NAGIOS_STATUS_PATH=/usr/local/nagios/var/status.dat
-$ uwsgi --http :9090 --wsgi wsgi:application --master
+$ uwsgi --http :9090 --wsgi nagiosapi:app --master
 ```
 
 ### Docker
