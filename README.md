@@ -34,7 +34,7 @@ $ docker run -d \
     --name nagiosapi
     -p 9090:9090 \
     -e NAGIOS_STATUS_PATH=/usr/local/nagios/var/status.dat \
-    -v /usr/local/nagios/var/status.dat:/usr/local/nagios/var/status.dat
+    -v /usr/local/nagios/var/:/usr/local/nagios/var/:ro
     rmcintosh/nagiosapi
 ```
 
